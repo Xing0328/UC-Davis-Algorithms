@@ -1,4 +1,4 @@
-ecs_122a_samples
+ecs_122a
 ================
 
 Lecture notes implimented in python.
