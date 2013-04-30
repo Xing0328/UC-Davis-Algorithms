@@ -9,7 +9,7 @@ def count_inversions(a):
     return inv_count
 
 def brute_force(length):
-    """The strategy here is to emperically find the number of inversions.
+    """The strategy here is to empirically find the number of inversions.
         We look at all permutations, count the inversions for each,
         and return the average (expected) number of inversions."""
     import itertools
