@@ -3,7 +3,7 @@
 #   couns - the array of availiable denominations
 # output:
 #   number of coins needed to exchange amount of cents
-n = 39
+n = 24
 coins = [1, 5, 10, 25]
 
 #fill in the table "by hand"
@@ -17,8 +17,7 @@ s = {1: 1, 2: 2, 3: 3, 4: 4,
 # build up table from 26 -> n
 for i in range(26, n + 1):
     s[i] = 1 + min(s[i - 1], s[i - 5], s[i - 10], s[i - 25])
-
-
+print s
 print s[n]
 
 # # print the whole table:
