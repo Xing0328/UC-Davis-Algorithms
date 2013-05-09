@@ -1,4 +1,6 @@
 ecs_122a
+
+Lecture notes implemented in Python.
 ================
 ## Please do let me know if you find any errors.
 
@@ -6,5 +8,4 @@ ecs_122a
 
 http://repl.it/languages/Python
 
-Lecture notes implemented in python.
 
