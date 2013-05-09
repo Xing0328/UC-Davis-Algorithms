@@ -4,8 +4,9 @@ Lecture notes implemented in Python.
 ================
 ## Please do let me know if you find any errors.
 
-## If you're not used to running python, here's an online python interpreter that I tought seemed interesting.
+## Here're a few online python interpreter that I tought seemed interesting.
 
+http://ideone.com/
 http://repl.it/languages/Python
 
 

@@ -48,7 +48,6 @@ def fractional_knapsack(g, W=4):
 
 n = 7
 g = init_input(n)
-
 F = fractional_knapsack(g, 15)
 
 for x in range(len(g)):
