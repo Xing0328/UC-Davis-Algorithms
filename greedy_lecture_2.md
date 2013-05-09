@@ -31,8 +31,9 @@ Weight of taken items = sum(f[i] * w[i] for i in range(bag_size))
     4.      if (R >= W[i]):
     4a.         f[i] = 1    (take this item)
     5.      else:
-    5b.         f[i] <- R/w[i]
+    5b.         f[i] <- R/W[i]
     6.      i += 1
+    6b.     R -= W[i]
     7. end-while
     8. return F.
 
