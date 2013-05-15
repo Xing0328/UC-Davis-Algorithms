@@ -3,10 +3,11 @@
 
 ## Graphs - Ch. 22
 
-* Representation
+## Representation:
 * BFS
 * DFS
 * Topological Sort (Top Sort)
+* Strongly Connected Components
 
 #### Graph Questions:
 1.  are two nodes (a, b) connected?
@@ -46,7 +47,7 @@ or, in the .dot language:
 
 Which creates:
 
-![alt](./images/lecture.jpg "(with graphviz)")
+![alt](./images/lecture.jpg "")
 
 
 #### Def: A Directed graph is a Graph, where the order of the edges matters.
