@@ -1,5 +1,7 @@
 # Lecture proposal notes for Wed, 5/15/13 - Bryan Maass
 
+[toc]
+
 Plan:
 ----
 1. DAG review
@@ -10,15 +12,12 @@ Plan:
 
 Directed Acyclic Graphs
 ---
-
-![alt](./images/dag.svg "")
+![alt](./images/dag.png)
 
 
 Quick DFS Review
 --
-![alt](./images/lecture_bfs_example.jpg)
-- - -
-![alt](./images/lecture_dfs_example.jpg)
+![alt](./images/dfs_review.png)
 
 Topological Sort
 ----
@@ -45,7 +44,26 @@ a tree that connects all the vertices together. A single graph can have many dif
 ### Def: Minimal Spanning Tree
 We can also assign a weight to each edge, which is a number representing how unfavorable it is, and use this to assign a weight to a spanning tree by computing the sum of the weights of the edges in that spanning tree. A minimum spanning tree (MST) or minimum weight spanning tree is then a spanning tree with weight less than or equal to the weight of every other spanning tree. More generally, any undirected graph (not necessarily connected) has a minimum spanning forest, which is a union of minimum spanning trees for its connected components.
 
+# How to produce MST?
 
+## Kruskal's Algorithm
+
+At a high level: take all the edges, sort them on weight.  Iterate through the edges and add the edge into the graph iff it does not create a cycle.
+
+    MST-Kruskal(G, w)
+    Assuming G = (V, E)
+
+    1.  A = Ø
+    2.  for each vertex v in V
+    3.      MAKE-SET(v)
+    4.  sort the edges of E into nondecreasing order by weight w
+    5.  for each edge(u,v) in E
+    6.      if FIND-SET(u) != FIND-SET(v)
+    7.          A.append(u,v)
+    8.          UNION(u,v)
+    9.  return A
+
+![alt](./images/kruskal_ex.png)
 Strongly Connected Components
 ---
 
