@@ -37,8 +37,7 @@ Greedy 1: Activity Scheduling
 A Classroom can accomodate 1 class at a time.
 
 
-Problem: Maximize the time used such that no two classes overlap.
-
+Problem: Maximize the time used such that we find the largest subset without conflicts
 
 definition of conflict:
 --
